@@ -1,20 +1,20 @@
 # ROADMAP.md
 
-## Phase 1: MVP (Minimum Viable Product) - *The Core Brain*
+## Phase 1: MVP (Minimum Viable Product) - *The Micro-Accelerator*
 - [ ] Set up Gradio UI with basic Chat-to-Code layout.
 - [ ] Integrate DeepSeek-V4-Flash API.
-- [ ] Implement "MindSpore Basic Scaffold" generation.
-- [ ] Basic error lookup for common Ascend/CANN errors.
+- [ ] Implement **"Cell-Level Intent Interpreter"**: natural language input produces a single cell's worth of code, accompanied by a short explanation.
+- [ ] Implement **"Error Diagnosis Playground"**: paste a full error log, get a layered explanation (plain language, technical root cause, and optional fix candidate).
 
-## Phase 2: Beta - *The Deep Integration*
+## Phase 2: Beta - *Deep Insight & Comparison*
 - [ ] **RAG Implementation**: Populate the vector database with official MindSpore 2.x documentation.
-- [ ] **PyTorch-to-MindSpore Converter**: Enhanced prompts and rules for model migration.
-- [ ] **Real-time Visualization**: Interactive loss curves and NPU utilization bars.
+- [ ] Implement **"Framework Lens"**: interactive side-by-side comparison for code snippets (PyTorch vs MindSpore), highlighting syntactic and semantic differences.
+- [ ] Integrate **"Execution Trace" visualization**: track a variable's history and type evolution across cells.
 
-## Phase 3: Advanced - *The Full Ecosystem*
-- [ ] **Cloud Brain Link**: Interface with OpenI APIs to monitor actual running tasks.
-- [ ] **"Learn Mode"**: Socratic tutoring for educational users.
-- [ ] **Asset Management**: A side gallery to manage generated scripts, datasets, and model weights.
+## Phase 3: Advanced - *Ecosystem & Education*
+- [ ] **Cloud Brain Observer**: Read-only monitoring of ongoing tasks for telemetry correlation, without altering running jobs.
+- [ ] **"Learn Mode" (Socratic Toggling)**: Force the agent to guide the user through a problem instead of giving the answer.
+- [ ] **Asset Gallery**: Manage generated single-cell snippets and diagnostic reports.
 
 ## Phase 4: Final Polishing & Deployment
 - [ ] Comprehensive README and video demo for AgentWeaver submission.

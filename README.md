@@ -2,15 +2,18 @@
 
 > **Empowering the Ascend & MindSpore Ecosystem with Intelligent Autonomy.**
 
-AscendMind Agent is an AI-first, integrated workspace designed specifically for the **OpenI (启智社区)** ecosystem. Unlike traditional notebooks, it centers the developer experience around a conversational AI agent that possesses deep knowledge of **Huawei Ascend NPU** hardware and the **MindSpore** framework.
+Start with a question, an error, or a blurry idea. The Agent accelerates every micro-decision by handling the syntax you shouldn't need to memorize, while keeping you in full control of the architecture.
+
+This is not a project generator. It's a debugging-first, micro-task accelerator for developers who want to understand their code, not outsource it.
 
 ## 🌟 Key Features
 
-- **AI-First Workflow**: No more blank cells. Start with an intent, and let the agent scaffold your MindSpore project.
-- **Ascend Error Physician**: Automated diagnosis of complex CANN and NPU-specific errors with one-click fix suggestions.
-- **MindSpore Code Transformer**: Seamlessly migrate PyTorch/TensorFlow code to MindSpore with NPU-optimized operators.
+- **Cell-Level Code Accelerator**: Describe the logic of a single cell in natural language, and get the precise MindSpore/CANN syntax. You review, you decide, you run.
+- **Ascend Error Physician**: Automated, explainable, and verifiable diagnosis of complex CANN and NPU-specific errors with one-click fix suggestions.
+- **Execution Trace Inspector**: Not just errors. Track how a variable's value and type evolve across cells, so you can catch silent bugs before they cascade.
 - **Zero-Code Research Visualizer**: Turn raw training logs into publication-ready, interactive performance insights.
-- **NPU Control Center**: Direct integration with OpenI Cloud Brain resources to monitor and execute tasks.
+- **NPU Control Center**: Direct integration with OpenI Cloud Brain resources for light monitoring of tasks without altering code logic.
+- **Socratic "Learn Mode" (Optional Toggle)**: Designed for students and explorers. When enabled, the Agent guides you through problems with pedagogical questioning instead of direct fixes, helping you build a deeper mental model of the Ascend/MindSpore stack.
 
 ## 🚀 Quick Start (Development)
 

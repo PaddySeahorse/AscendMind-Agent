@@ -5,13 +5,13 @@ Inspired by **Google Colab's AI-First** evolution, we realized that the next gen
 
 ## 🧠 Brainstorming Logs
 
-### Concept 1: The "MindSpore Translator"
-- **Idea**: Paste a PyTorch snippet, get a MindSpore one.
-- **Evolution**: Don't just translate; optimize for NPU "Operator Sinking" (算子下沉) automatically.
+### Concept 1 (Revised): The "Framework Lens"
+- **Idea**: Paste a short PyTorch or TensorFlow snippet, and get a side-by-side breakdown of how the same logic maps to MindSpore.
+- **Evolution**: Not a blind translator. It highlights why certain operators differ, what Ascend-specific optimizations are triggered, and what the memory implications are. You still write the final code.
 
 ### Concept 2: The "NPU Physician"
 - **Idea**: A chatbot that knows what `ACL Error 507011` means.
-- **Inspiration**: Traditional search engines fail on these niche, technical logs. LLMs with RAG can solve this.
+- **Inspiration**: Traditional search engines fail on these niche, technical logs. LLMs with RAG can solve this by providing layered explanations (Plain language -> Technical root cause -> Fix candidate).
 
 ### Concept 3: The "Canvas" UI
 - **Idea**: Move away from the vertical "Cell" scrolling.
@@ -20,7 +20,8 @@ Inspired by **Google Colab's AI-First** evolution, we realized that the next gen
 ### Concept 4: The "Socratic" Learn Mode
 - **Idea**: For students on OpenI, don't just give the answer.
 - **Feature**: When "Learn Mode" is toggled, the agent asks questions back: "Why do you think we need to convert this to MindRecord format first?"
+- **Philosophy**: This is core to our philosophy: the agent should sometimes refuse to give the direct answer, pushing the user to formulate the diagnostic hypothesis themselves.
 
 ## 🚀 Future Moonshots
-- **Auto-Provisioning**: The Agent automatically starts a Cloud Brain task with the right NPU resources based on the model size.
+- **Collaborative Debugging**: Share a frozen notebook state with the agent's diagnostic notes, allowing multi-user root-cause analysis.
 - **Dataset Discovery**: "Find me a dataset for medical imaging on OpenI and write the loader for it."
