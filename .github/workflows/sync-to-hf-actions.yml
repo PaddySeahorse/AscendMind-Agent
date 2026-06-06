@@ -1,0 +1,32 @@
+name: Sync to HF Spaces
+
+on: [push]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject YAML metadata for HF Space
+        run: |
+          cp README.md README.original.md
+          printf '%s\n' '---' \
+            'title: AscendMind Agent' \
+            'emoji: 🚀' \
+            'colorFrom: blue' \
+            'colorTo: purple' \
+            'sdk: gradio' \
+            'sdk_version: 5.23.0' \
+            'app_file: app.py' \
+            'pinned: false' \
+            'license: apache-2.0' \
+            '---' > README.md
+          cat README.original.md >> README.md
+          rm README.original.md
+
+      - uses: huggingface/hub-sync@v0.1.0
+        with:
+          github_repo_id: ${{ github.repository }}
+          huggingface_repo_id: PaddySeahorse/AscendMind-Agent
+          hf_token: ${{ secrets.HF_TOKEN }}
