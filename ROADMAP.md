@@ -1,7 +1,7 @@
 # ROADMAP.md
 
 ## Phase 1: MVP (Minimum Viable Product) - *The Micro-Accelerator*
-- [ ] Set up Gradio UI with basic Chat-to-Code layout.
+- [x] Set up Gradio UI with basic Chat-to-Code layout.
 - [ ] Integrate DeepSeek-V4-Flash API.
 - [ ] Implement **"Cell-Level Intent Interpreter"**: natural language input produces a single cell's worth of code, accompanied by a short explanation.
 - [ ] Implement **"Error Diagnosis Playground"**: paste a full error log, get a layered explanation (plain language, technical root cause, and optional fix candidate).
